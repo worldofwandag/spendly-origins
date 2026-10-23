@@ -1,40 +1,40 @@
 /*
-  Spendly: "Pistachio Fintech" theme
-  Charcoal surfaces, soft pistachio gradient hero panels,
+  Spendly: "Lavender Fintech" theme
+  Cool charcoal surfaces, pale lavender gradient hero panels,
   pill controls and soft rounded cards. Font: Plus Jakarta Sans.
 */
 
 :root {
   /* Palette */
-  --night: #111311;
-  --surface: #1a1d1a;
-  --surface-2: #222622;
-  --surface-3: #2b302b;
-  --lime-1: #e4eccb;
-  --lime-2: #c8d9a0;
-  --lime-3: #a7bd7f;
-  --olive: #6f8552;
-  --ink: #171a15;
+  --night: #121118;
+  --surface: #1b1a22;
+  --surface-2: #23222c;
+  --surface-3: #2d2b38;
+  --lavender-1: #ece6fc;
+  --lavender-2: #cbbdf3;
+  --lavender-3: #a893e2;
+  --violet: #6c58aa;
+  --ink: #19162a;
   --coral: #ec8c79;
   --amber: #e6b968;
-  --green: #3d5c37;
+  --plum: #4b3f73;
 
   /* Roles */
   --bg: var(--night);
   --card: var(--surface);
-  --text: #f3f4ef;
-  --muted: #a5ab9e;
+  --text: #f4f3f9;
+  --muted: #aba8b9;
   --border: rgba(255, 255, 255, 0.07);
-  --border-soft: rgba(243, 244, 239, 0.14);
-  --accent: var(--lime-2);
+  --border-soft: rgba(244, 243, 249, 0.14);
+  --accent: var(--lavender-2);
   --accent-text: var(--ink);
-  --good: var(--lime-2);
+  --good: var(--lavender-2);
   --close: var(--amber);
   --over: var(--coral);
-  --track: #30352f;
+  --track: #33313e;
   --radius: 28px;
 
-  --lime-gradient: linear-gradient(155deg, var(--lime-1) 0%, var(--lime-2) 45%, var(--lime-3) 100%);
+  --lavender-gradient: linear-gradient(155deg, var(--lavender-1) 0%, var(--lavender-2) 45%, var(--lavender-3) 100%);
 
   color-scheme: dark;
 }
@@ -45,7 +45,7 @@
 }
 
 ::selection {
-  background: var(--lime-2);
+  background: var(--lavender-2);
   color: var(--ink);
 }
 
@@ -57,8 +57,8 @@ body {
   min-height: 100vh;
   font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
   background:
-    radial-gradient(1100px 520px at 50% -180px, rgba(200, 217, 160, 0.07), transparent 70%),
-    radial-gradient(700px 400px at 100% 100%, rgba(111, 133, 82, 0.08), transparent 70%),
+    radial-gradient(1100px 520px at 50% -180px, rgba(203, 189, 243, 0.07), transparent 70%),
+    radial-gradient(700px 400px at 100% 100%, rgba(108, 88, 170, 0.08), transparent 70%),
     var(--bg);
   background-attachment: fixed;
   color: var(--text);
@@ -67,17 +67,17 @@ body {
 }
 
 a {
-  color: var(--lime-2);
+  color: var(--lavender-2);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 a:hover {
-  color: var(--lime-1);
+  color: var(--lavender-1);
 }
 
 :focus-visible {
-  outline: 2px solid var(--lime-2);
+  outline: 2px solid var(--lavender-2);
   outline-offset: 3px;
 }
 
@@ -103,7 +103,7 @@ h2 {
   letter-spacing: -0.01em;
 }
 
-/* Nav: floating pill on desktop, lime tab bar on mobile */
+/* Nav: floating pill on desktop, lavender tab bar on mobile */
 
 .nav {
   position: sticky;
@@ -116,7 +116,7 @@ h2 {
   max-width: 1040px;
   margin: 16px auto 0;
   padding: 8px;
-  background: rgba(26, 29, 26, 0.8);
+  background: rgba(27, 26, 34, 0.8);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--border);
@@ -174,7 +174,7 @@ h2 {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--lime-gradient);
+  background: var(--lavender-gradient);
   color: var(--ink);
   font-size: 1.05rem;
   font-weight: 800;
@@ -188,7 +188,7 @@ h2 {
 /* Shared pieces */
 
 .card {
-  background: linear-gradient(180deg, var(--surface) 0%, #161916 100%);
+  background: linear-gradient(180deg, var(--surface) 0%, #17161d 100%);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 24px;
@@ -202,7 +202,7 @@ h2 {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background: var(--lime-gradient);
+  background: var(--lavender-gradient);
   color: var(--accent-text);
   border: none;
   border-radius: 999px;
@@ -214,7 +214,7 @@ h2 {
   align-self: flex-start;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.6),
-    0 12px 30px -12px rgba(200, 217, 160, 0.3);
+    0 12px 30px -12px rgba(203, 189, 243, 0.3);
   transition: transform 0.15s ease, filter 0.15s ease;
 }
 
@@ -233,7 +233,7 @@ h2 {
   border: none;
   padding: 0;
   font: inherit;
-  color: var(--lime-2);
+  color: var(--lavender-2);
   cursor: pointer;
 }
 
@@ -273,7 +273,7 @@ h2 {
   height: 22px;
   border-radius: 50%;
   border: 3px solid var(--track);
-  border-top-color: var(--lime-2);
+  border-top-color: var(--lavender-2);
   animation: spin 0.8s linear infinite;
 }
 
@@ -291,7 +291,7 @@ h2 {
   gap: 12px;
 }
 
-/* Hero: the lime "Total Balance" panel */
+/* Hero: the lavender "Total Balance" panel */
 .page-header {
   position: relative;
   flex-wrap: wrap;
@@ -303,11 +303,11 @@ h2 {
   color: var(--ink);
   background:
     radial-gradient(circle at 92% -30%, rgba(255, 255, 255, 0.45), transparent 42%),
-    radial-gradient(circle at 0% 120%, rgba(111, 133, 82, 0.25), transparent 45%),
-    var(--lime-gradient);
+    radial-gradient(circle at 0% 120%, rgba(108, 88, 170, 0.25), transparent 45%),
+    var(--lavender-gradient);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.55),
-    0 24px 60px -24px rgba(200, 217, 160, 0.18);
+    0 24px 60px -24px rgba(203, 189, 243, 0.18);
 }
 
 .page-header h1 {
@@ -336,23 +336,23 @@ h2 {
   height: 24px;
   transform: translateX(-50%);
   border-radius: 0 0 26px 26px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23171a15' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center 4px / 14px no-repeat, var(--lime-3);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2319162a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") center 4px / 14px no-repeat, var(--lavender-3);
 }
 
 /* Dark rounded action button, like Send / Request */
 .page-header .button {
   align-self: auto;
   background: var(--ink);
-  color: var(--lime-1);
+  color: var(--lavender-1);
   border-radius: 20px;
   padding: 14px 22px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 10px 24px -10px rgba(23, 26, 21, 0.6);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 10px 24px -10px rgba(25, 22, 42, 0.6);
 }
 
 .page-header .button:hover {
-  color: var(--lime-1);
+  color: var(--lavender-1);
   filter: none;
-  background: #262b24;
+  background: #2a2740;
 }
 
 .total {
@@ -360,7 +360,7 @@ h2 {
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1;
-  color: var(--lime-1);
+  color: var(--lavender-1);
   font-variant-numeric: tabular-nums;
 }
 
@@ -379,7 +379,7 @@ select {
 }
 
 input::placeholder {
-  color: rgba(243, 244, 239, 0.3);
+  color: rgba(244, 243, 249, 0.3);
 }
 
 input:hover,
@@ -390,8 +390,8 @@ select:hover {
 input:focus,
 select:focus {
   outline: none;
-  border-color: var(--lime-2);
-  box-shadow: 0 0 0 4px rgba(200, 217, 160, 0.18);
+  border-color: var(--lavender-2);
+  box-shadow: 0 0 0 4px rgba(203, 189, 243, 0.18);
 }
 
 select {
@@ -399,7 +399,7 @@ select {
   -webkit-appearance: none;
   cursor: pointer;
   padding-right: 46px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8d9a0' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23cbbdf3' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 18px center;
   background-size: 14px;
@@ -435,7 +435,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  color: var(--lime-1);
+  color: var(--lavender-1);
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -500,7 +500,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   column-gap: 14px;
   row-gap: 6px;
   padding: 14px 0;
-  border-top: 1px solid rgba(243, 244, 239, 0.06);
+  border-top: 1px solid rgba(244, 243, 249, 0.06);
 }
 
 .expense:first-child {
@@ -514,7 +514,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 48px;
   height: 48px;
   border-radius: 16px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8d9a0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M8 7h9v9'/%3E%3C/svg%3E") center / 20px no-repeat, var(--surface-3);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23cbbdf3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M8 7h9v9'/%3E%3C/svg%3E") center / 20px no-repeat, var(--surface-3);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
@@ -572,8 +572,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .expense-actions a:hover {
-  background: var(--lime-2);
-  border-color: var(--lime-2);
+  background: var(--lavender-2);
+  border-color: var(--lavender-2);
   color: var(--ink);
 }
 
@@ -634,13 +634,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: var(--knob, var(--lime-1));
+  background: var(--knob, var(--lavender-1));
   border: 3px solid var(--surface);
   transform: translateY(-50%);
 }
 
 .budget-fill.good {
-  background: linear-gradient(90deg, var(--olive), var(--lime-2));
+  background: linear-gradient(90deg, var(--violet), var(--lavender-2));
 }
 
 .budget-fill.close {
@@ -675,10 +675,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   content: "↑";
 }
 
-/* The little green "↑ 24%" pill */
+/* The little plum "↓" pill */
 .change.down {
-  color: #e4efd8;
-  background: var(--green);
+  color: #ede7ff;
+  background: var(--plum);
 }
 
 .change.down::before {
@@ -695,7 +695,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .report-table td {
   text-align: left;
   padding: 12px 0;
-  border-top: 1px solid rgba(243, 244, 239, 0.06);
+  border-top: 1px solid rgba(244, 243, 249, 0.06);
 }
 
 .report-table th:not(:first-child),
@@ -717,7 +717,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .report-table td:last-child {
   font-weight: 700;
-  color: var(--lime-2);
+  color: var(--lavender-2);
 }
 
 /* Desktop: dashboard layouts */
@@ -757,7 +757,7 @@ main:has(> .form) {
   max-width: 600px;
 }
 
-/* Mobile: lime tab bar pinned to the bottom with a raised center button */
+/* Mobile: lavender tab bar pinned to the bottom with a raised center button */
 
 @media (max-width: 640px) {
   body {
@@ -781,7 +781,7 @@ main:has(> .form) {
     display: grid;
     grid-template-columns: 1fr 96px 1fr;
     align-items: center;
-    background: linear-gradient(180deg, var(--lime-1), var(--lime-2));
+    background: linear-gradient(180deg, var(--lavender-1), var(--lavender-2));
     border: none;
     border-radius: 30px;
     backdrop-filter: none;
@@ -795,7 +795,7 @@ main:has(> .form) {
     gap: 4px;
     padding: 8px;
     font-size: 0.75rem;
-    color: rgba(23, 26, 21, 0.72);
+    color: rgba(25, 22, 42, 0.72);
   }
 
   .nav a:not(.logo)::before {
@@ -825,9 +825,9 @@ main:has(> .form) {
     padding: 0;
     border-radius: 50%;
     font-size: 0;
-    background: radial-gradient(circle at 35% 30%, #c8d9a0, var(--olive) 72%);
+    background: radial-gradient(circle at 35% 30%, #cbbdf3, var(--violet) 72%);
     box-shadow:
-      0 0 0 7px var(--lime-1),
+      0 0 0 7px var(--lavender-1),
       0 14px 28px rgba(0, 0, 0, 0.35),
       inset 0 2px 6px rgba(255, 255, 255, 0.35);
   }
